@@ -1,9 +1,18 @@
-import React from 'react'
+import React from 'react';
+import TaskList from '../CompundSaredState/TaskList';
+import TaskForm from '../CompundSaredState/TaskForm';
+import TaskItem from '../CompundSaredState/TaskItem';
 import Navigate from './Navigate'
-function Services() {
+const Services = () => {
   return (
-    <div> <Navigate /></div>
-  )
-}
+    <>
+    <Navigate />
+    <TaskList className='container'>
+      <TaskForm />
+     <TaskItem />
+    </TaskList>
+    </>
+  );
+};
 
-export default Services
+export default Services;

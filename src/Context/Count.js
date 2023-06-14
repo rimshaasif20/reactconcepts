@@ -1,5 +1,6 @@
 import React from 'react'
 import { useMyContext } from './MyContext';
+
 function Count() {
 const { message } = useMyContext();
 
@@ -8,7 +9,7 @@ const { message } = useMyContext();
  }
   return (
     // <button onClick={handleMessage}>Click me</button>
-    <div>{message}</div>
+    <div className='container'>{message}</div>
   )
 }
 
